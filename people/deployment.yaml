@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: people-app
-          image: goofyahead/people-app:1.0.1
+          image: goofyahead/people-app:develop
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080

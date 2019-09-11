@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: company-app
-          image: goofyahead/company-app:1.0.1
+          image: goofyahead/company-app:develop
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
