@@ -3,7 +3,7 @@
 # Define app name
 APP_NAME=$1
 
-./gradlew build
+./gradlew -Pkubernetes build
 
 MINOR=$(git rev-list HEAD --count --first-parent)
 VERSION=1.0.${MINOR:-1}

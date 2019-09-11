@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
+
 @RestController
 public class PeopleWithCompanyController {
 
@@ -18,7 +20,7 @@ public class PeopleWithCompanyController {
 
     @GetMapping("/peopleWithCompany/{id}")
     public Person getPerson(@PathVariable int id){
-        Company company = companyService.getCompany("Alex");
+        Company company = companyService.getCompany();
         Person human = Person.getRandomPerson();
         human.setCompany(company);
         return human;
