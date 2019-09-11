@@ -11,3 +11,4 @@ VERSION=1.0.${MINOR:-1}
 docker build . -t "goofyahead/${APP_NAME}:${VERSION}" -t "develop"
 
 docker push goofyahead/${APP_NAME}:${VERSION}
+docker push goofyahead/${APP_NAME}:develop
