@@ -44,3 +44,26 @@ kubectl describe services
 
 https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
+# Tasks
+
+-[X] Create microservice `people` with springBoot
+-[X] Create microservice `company` with springBoot
+-[X] Create kubernetes deployment for `people` 
+-[X] Create kubernetes deployment for `company` 
+-[X] Build and publis docker images for `people` 
+-[X] Build and publis docker images for `company` 
+-[X] Handle versioning docker images for `people` 
+-[X] Handle versioning  docker images for `company` 
+-[X] Create kubernetes service for `people` 
+-[X] Create kubernetes service for `company` 
+-[X] Conditional dependencies in `gradle`
+-[X] Create a `Eureka` discovery service
+-[X] Run `FeignClient` with ribbon with calls A->B on `Eureka` 
+-[X] Run `FeignClient` with ribbon with calls A->B on `Kubernetes` 
+-[ ] Run `config-server` and give parameters to microservices
+-[ ] Use kubernetes config-map to get those parameters
+-[ ] Use kubernetes secret
+-[ ] Use kubernetes secret with mount volume
+-[ ] Liveness probe
+-[ ] Readiness probe
+-[ ] Roll-out documentation
