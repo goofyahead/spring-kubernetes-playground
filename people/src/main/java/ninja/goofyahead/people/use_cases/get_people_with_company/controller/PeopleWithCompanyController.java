@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class PeopleController {
+public class PeopleWithCompanyController {
 
     private final CompanyClient companyService;
 
-    public PeopleController(CompanyClient companyService) {
+    public PeopleWithCompanyController(CompanyClient companyService) {
         this.companyService = companyService;
     }
 

@@ -11,7 +11,7 @@ RUN apk add curl
 WORKDIR /app
 
 # Copy the executable JAR to the image
-COPY /build/libs/*.jar /app
+COPY /build/libs/*.jar /app/
 
 # Run the app
 ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom ${JAVA_OPTS} -jar *.jar
