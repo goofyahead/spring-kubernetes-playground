@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: people-deployment
+  labels:
+    app: people-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: people-app
+  template:
+    metadata:
+      labels:
+        app: people-app
+    spec:
+      containers:
+        - name: people-app
+          image: goofyahead/people-app:1.0.1
+          ports:
+            - containerPort: 8080

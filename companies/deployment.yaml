@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: company-deployment
+  labels:
+    app: company-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: company-app
+  template:
+    metadata:
+      labels:
+        app: company-app
+    spec:
+      containers:
+        - name: company-app
+          image: goofyahead/company-app:1.0.1
+          ports:
+            - containerPort: 8080

@@ -1,0 +1,9 @@
+### Get request with a header
+GET http://localhost:8080/company/3
+Accept: application/json
+
+### Get request with a header
+GET http://localhost:8080/company?employee=andrew
+Accept: application/json
+
+###
