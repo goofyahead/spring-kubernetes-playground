@@ -2,10 +2,10 @@ spring:
   application:
     name: company-service
 
-  cloud:
-    kubernetes:
-      config:
-        name: company-app-config
+#  cloud:
+#    kubernetes:
+#      config:
+#        name: company-app-config
 
 server:
   port: 8080
