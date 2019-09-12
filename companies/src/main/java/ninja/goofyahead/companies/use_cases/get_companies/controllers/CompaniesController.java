@@ -27,7 +27,9 @@ public class CompaniesController {
     @GetMapping("/company/{id}")
     public Company getCompanyById(@PathVariable int id){
         log.info("message from config " + greetings);
-        return Company.generateRandom();
+        Company company = Company.generateRandom();
+        company.setName(greetings);
+        return company;
     }
 
     @GetMapping("/company")
