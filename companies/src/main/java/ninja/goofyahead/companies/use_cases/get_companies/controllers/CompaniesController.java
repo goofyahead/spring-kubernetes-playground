@@ -1,6 +1,5 @@
 package ninja.goofyahead.companies.use_cases.get_companies.controllers;
 
-import com.netflix.discovery.converters.Auto;
 import ninja.goofyahead.companies.use_cases.get_companies.client.PeopleClient;
 import ninja.goofyahead.companies.use_cases.get_companies.config.ClientConfig;
 import ninja.goofyahead.companies.use_cases.get_companies.models.Company;

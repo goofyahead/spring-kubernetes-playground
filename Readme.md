@@ -52,6 +52,8 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap
 
 * https://kubernetes.io/docs/reference/kubectl/cheatsheet/
 
+* https://www.baeldung.com/spring-cloud-kubernetes
+
 # Tasks
 
 - [X] Create microservice `people` with springBoot
@@ -84,7 +86,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap
 
 - [ ] Run `config-server` and give parameters to microservices
 
-- [ ] Use kubernetes config-map to get those parameters
+- [X] Use kubernetes config-map to get those parameters
 
 - [ ] Use kubernetes secret
 

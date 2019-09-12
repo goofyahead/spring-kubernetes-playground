@@ -2,13 +2,10 @@ spring:
   application:
     name: company-service
 
-greetings:
-  message: wall wall wall
-
 #  cloud:
 #    kubernetes:
 #      config:
-#        name: company-app-config
+#        name: company-app-config (by default uses the app name company-service)
 
 server:
   port: 8080
