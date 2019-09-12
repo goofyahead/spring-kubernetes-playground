@@ -5,6 +5,9 @@ spring:
 server:
   port: 0
 
+greetings:
+  message: well well well
+
 eureka:
   client:
     serviceUrl:

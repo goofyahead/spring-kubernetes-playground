@@ -1,0 +1,15 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: company-app-config
+data:
+  application.yml: |-
+    greeting:
+      message: Say Hello to the World
+    farewell:
+      message: Say Goodbye
+  application-kubernetes.yml: |-
+    greeting:
+      message: Say Hello to from kube profile
+    farewell:
+      message: Say Goodbye

@@ -14,4 +14,4 @@ WORKDIR /app
 COPY /build/libs/*.jar /app/
 
 # Run the app
-ENTRYPOINT java -Dspring.profiles.active=kubernetes -Djava.security.egd=file:/dev/./urandom ${JAVA_OPTS} -jar *.jar
+ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom ${JAVA_OPTS} -jar *.jar

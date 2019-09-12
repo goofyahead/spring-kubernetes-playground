@@ -28,11 +28,11 @@ dependencies {
     if (project.hasProperty("kubernetes")) {
         implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes'
         implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes-ribbon'
+        implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes-config'
     } else {
         implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
         implementation 'org.springframework.cloud:spring-cloud-starter-netflix-ribbon'
     }
-//    implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes-config'
     implementation 'com.github.javafaker:javafaker:1.0.1'
     compileOnly 'org.projectlombok:lombok'
     implementation 'org.springframework.boot:spring-boot-devtools'
