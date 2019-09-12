@@ -1,12 +1,11 @@
 spring:
   application:
     name: company-service
+  profiles:
+    active: default
 
 server:
   port: 0
-
-greetings:
-  message: well well well
 
 eureka:
   client:

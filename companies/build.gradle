@@ -33,6 +33,7 @@ dependencies {
     } else {
         implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
         implementation 'org.springframework.cloud:spring-cloud-starter-netflix-ribbon'
+        implementation 'org.springframework.cloud:spring-cloud-starter-config'
     }
     implementation 'com.github.javafaker:javafaker:1.0.1'
     compileOnly 'org.projectlombok:lombok'

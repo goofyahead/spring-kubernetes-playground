@@ -84,7 +84,7 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap
 
 - [X] Run `FeignClient` with ribbon with calls A->B on `Kubernetes` 
 
-- [ ] Run `config-server` and give parameters to microservices
+- [X] Run `config-server` and give parameters to microservices
 
 - [X] Use kubernetes config-map to get those parameters
 
