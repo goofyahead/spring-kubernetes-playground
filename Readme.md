@@ -88,12 +88,12 @@ https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap
 
 - [X] Use kubernetes config-map to get those parameters
 
-- [ ] Use kubernetes secret
+- [X] Liveness probe
 
-- [ ] Use kubernetes secret with mount volume
+- [X] Readiness probe
 
-- [ ] Liveness probe
+- [ ] Use kubernetes secrets
 
-- [ ] Readiness probe
+- [ ] Use kubernetes secrets with mount volumes
 
 - [ ] Roll-out documentation

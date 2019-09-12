@@ -25,6 +25,7 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
     if (project.hasProperty("kubernetes")) {
         implementation 'org.springframework.cloud:spring-cloud-starter-kubernetes'
