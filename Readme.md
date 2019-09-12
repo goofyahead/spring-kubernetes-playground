@@ -1,16 +1,56 @@
 # Kubernetes pods
 
 ## Set-up
-First configure your cluster with aws:
+The whole project can be built and deployed using docker-desktop and its kubernetes support.
+
+To deploy each service you will have to publish the images first.
 
 ```
-aws eks update-kubeconfig
+./gradlew publishDockerImage
 ```
 
-Expose deployment locally
+Then deploy with Kubectl
+```
+kubectl apply -f deployment.yaml
+```
+
+Then deploy the configMap
+```
+kubectl apply -f config-map.yaml
+```
+
+Finally deploy the service
+```
+kubectl apply -f service.yaml
+```
+
+Services are meant to expose the micro-services inside the cluster, so in order to test endpoint just execute curl from
+a given pod.
+
+```
+kubectl exec pod-name curl http://service-name/endpoint
+```
+
+Sample
+```
+kubectl exec pod-name curl http://people-service/people/3
+```
+
+Or expose deployment locally of the `people-service` with node port then use localhost:PORT
 ```
 kubectl expose deployment people-deployment --type=NodePort --name=people-service
 ```
+
+## Seeing your local kubernetes
+
+Docker desktop does not include dashboard and needs to be installed.
+
+* https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+
+```
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
+```
+
 
 Get local token for minikube on docker-desktop
 ```
